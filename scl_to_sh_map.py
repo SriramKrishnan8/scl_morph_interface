@@ -71,7 +71,9 @@ scl_sh_map = {
     # kqw_prawyayaH
     # handled by function map_kqw_prawyaya
     # waxXiwa_prawyayaH
-    "wasil" : "tasil", "mawup" : "matup", "vaw" : "vat",
+    "wasil" : "tasil", "mawup" : "matup", "vaw" : "vat", "wva" : "tva", "wal" : "tal",
+    "mayat" : "mayaṭ", "warap" : "tarap", "wamap" : "tamap", "karam" : "karam", "arWam" : "artham",
+    "pUrvaka" : "pūrvaka", "vAram" : "vāram", "kqwvasuc" : "kṛtvasuc", "xA" : "dā", "Sas" : "śas",
     # samAsa
     "sapUpa" : "iic."
 }
