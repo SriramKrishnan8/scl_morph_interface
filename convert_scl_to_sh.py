@@ -213,6 +213,7 @@ def convert(item, output_enc):
         sh_morphs_lst.append(sh_morph)
     
     new_dict["morph"] = sh_morphs_lst
+    new_dict["source"] = "SCL"
     
     return new_dict, status_val
 
