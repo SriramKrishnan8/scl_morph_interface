@@ -95,6 +95,30 @@ def run_sm_file(morph_binary_file, i_file, o_file, input_enc, output_enc):
     
     i_f = open(i_file, "r", encoding="utf-8")
     input_contents = i_f.read()
+    input_ = list(filter(None, input_contents.strip().split("\n")))
+    i_f.close()
+    
+    morph_all_dict = []
+    for in_ in tqdm(input_):
+        m_dict = run_sm_text(
+            morph_binary_file, in_, input_enc, output_enc
+        )
+        morph_all_dict.append(m_dict)
+#    morph_all_dict = run_sm(
+#        morph_binary_file, input_, input_enc, output_enc, input_type_text=False
+#    )
+
+    with open(o_file, 'w', encoding="utf-8") as f:
+        write_str_lst = [ json.dumps(item, ensure_ascii=False) for item in morph_all_dict]
+        write_str_lst = [ str(item) for item in morph_all_dict]
+        f.write("\n".join(write_str_lst))
+
+
+def run_sm_file_old(morph_binary_file, i_file, o_file, input_enc, output_enc):
+    """ """
+    
+    i_f = open(i_file, "r", encoding="utf-8")
+    input_contents = i_f.read()
     input_ = input_contents.strip()
     i_f.close()
     

@@ -74,6 +74,7 @@ scl_sh_map = {
     "wasil" : "tasil", "mawup" : "matup", "vaw" : "vat", "wva" : "tva", "wal" : "tal",
     "mayat" : "mayaṭ", "warap" : "tarap", "wamap" : "tamap", "karam" : "karam", "arWam" : "artham",
     "pUrvaka" : "pūrvaka", "vAram" : "vāram", "kqwvasuc" : "kṛtvasuc", "xA" : "dā", "Sas" : "śas",
+    "XA" : "dhā", "cvikq_kwa" : "iiv.",
     # samAsa
     "sapUpa" : "iic."
 }
